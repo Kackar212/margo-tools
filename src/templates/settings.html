@@ -1,0 +1,112 @@
+<form id="settings">
+  <h2>Ustawienia</h2>
+  <div class="field">
+    <input type="checkbox" id="canAttackGroup" name="autoAttack.canAttackGroup">
+    <label for="canAttackGroup" class="label label-checkbox">
+      Czy bot ma atakować grupy?
+      <span class="checkbox"></span>
+    </label>
+  </div>
+  <div class="field">
+    <input type="number" id="numberOfMonstersInGroup" name="autoAttack.numberOfMonstersInGroup" class="stop-lvl default">
+    <label for="numberOfMonstersInGroup" class="label">Podaj maksymalną liczbę potworów w grupie (opcjonalne)</label>
+  </div>
+  <div class="field">
+    <input type="text" id="nick" name="autoAttack.nick" class="stop-lvl default">
+    <label for="nick" class="label">Podaj nick potwora, który ma być atakowany (opcjonalne)</label>
+  </div>
+  <div class="fieldset" role="group" aria-labelledby="level-range">
+    <div class="legend" id="level-range">
+      Podaj zakres poziomu potwora
+    </div>
+    <div class="fields">
+      <div class="field">
+        <input type="number" id="levelRange-0" name="autoAttack.levelRange[0]" class="stop-lvl default">
+      </div>
+      <div class="field">
+        <input type="number" id="levelRange-1" name="autoAttack.levelRange[1]" class="stop-lvl default">
+      </div>
+    </div>
+  </div>
+  <div class="fieldset" role="group" aria-labelledby="auto-heal">
+    <div class="legend" id="auto-heal">
+      Zaznacz z których slotów ma korzystać bot podczas leczenia.
+    </div>
+    <div class="fields">
+      <div class="field">
+        <input type="checkbox" id="useSlots-0" name="autoHeal.useSlots[0]">
+        <label for="useSlots-0" class="label">
+          1
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-1" name="autoHeal.useSlots[1]">
+        <label for="useSlots-1" class="label">
+          2
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-2" name="autoHeal.useSlots[2]">
+        <label for="useSlots-2" class="label">
+          3
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-3" name="autoHeal.useSlots[3]">
+        <label for="useSlots-3" class="label">
+          4
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-4" name="autoHeal.useSlots[4]">
+        <label for="useSlots-4" class="label">
+          5
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-5" name="autoHeal.useSlots[5]">
+        <label for="useSlots-5" class="label">
+          6
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-6" name="autoHeal.useSlots[6]">
+        <label for="useSlots-6" class="label">
+          7
+          <span class="checkbox"></span>
+        </label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="useSlots-7" name="autoHeal.useSlots[7]">
+        <label for="useSlots-7" class="label">
+          8
+          <span class="checkbox"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="fields">
+    <div class="field">
+      <input type="number" id="lowHp" name="autoHeal.lowHp" class="stop-lvl default">
+      <label for="lowHp" class="label">Kiedy bot ma zacząć leczyć (%)</label>
+    </div>
+    <div class="field">
+      <input type="number" id="okHp" name="autoHeal.okHp" class="stop-lvl default">
+      <label for="okHp" class="label">Kiedy bot ma przestać leczyć (%)</label>
+    </div>
+  </div>
+  <div class="field">
+    <input type="text" id="loot" name="loot" class="default stop-lvl">
+    <label for="loot" class="label">Czarna lista lootu (dodawaj nazwy przedmiotów po przecinku)</label>
+  </div>
+  <button type="submit" class="button submit small green">
+    <div class="background"></div>
+    Zapisz
+  </button>
+</form>

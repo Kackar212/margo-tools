@@ -1,0 +1,104 @@
+body {
+  background-color: aqua;
+}
+
+html {
+  background-color: red;
+}
+
+input.quantity {
+  position: absolute;
+  z-index: 99;
+  width: 125px;
+  color: #fff;
+  bottom: 26px;
+  right: 10px;
+}
+
+
+body.auto-crafting div.border-window.mAlert.no-exit-button.window-on-peak.askAlert {
+  left: -9999px !important;
+  position: fixed !important;
+  z-index: -1 !important;
+}
+
+.mAlert-layer.layer .window-backdrop{
+  background: transparent;
+}
+
+.max-quantity-info {
+  display: table;
+  margin: 5px auto;
+  color: #000;
+}
+
+form#settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 4px;
+}
+
+.fieldset {
+  margin: 4px;
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  margin: 4px;
+}
+
+.fieldset .field {
+  display: inline-block;
+  margin: 4px 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.margo-bot .button, .margo-gathering .button {
+  margin: 10px;
+}
+
+.checkbox {
+  margin-right: 3px;
+}
+
+.window-content h2 {
+  text-align: center;
+}
+
+.field input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.field input[type="checkbox"]:checked + .label span{
+  width: 17px;
+  height: 17px;
+  background: url(https://fobos.margonem.pl/img/gui/buttony.png) no-repeat -502px -94px;
+  position: relative;
+}
+
+.legend {
+  margin: 4px 0 0 5px;
+}
+
+.field .label {
+  margin: 4px 0 4px 5px;
+  cursor: url(https://fobos.margonem.pl/img/gui/cursor/5.png) 4 0,url(https://fobos.margonem.pl/img/gui/cursor/5.cur) 4 0,auto;
+}
+
+.label-checkbox {
+  margin-left: 0 !important;
+}
